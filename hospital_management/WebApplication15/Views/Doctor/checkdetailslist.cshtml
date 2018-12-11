@@ -1,0 +1,169 @@
+﻿@model WebApplication15.Models.list_pat_details
+
+@{
+    ViewBag.Title = "checkdetailslist";
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+
+
+
+    <section class="banner-area relative about-banner" id="home">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Patient Details
+                    </h1>
+                    <p class="text-white link-nav"><a href="index.html">Patient </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> Patient Details</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+<br />
+<h2 style="color:darkslateblue">patient History</h2>
+<br />
+    <table class="table">
+       
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.s.PatientId)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.Gender)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.Age)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.BP)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.Weight)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.Pulse)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.s.indications)
+
+            </th>
+
+        </tr>
+        @foreach (var item in Model.list_history)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PatientId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pulse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.indications)
+                </td>
+                <td>
+                   
+
+                    @Html.ActionLink("Edit","Edit_history",new { id =item.id }) |
+                    @Html.ActionLink("Deletehistory", "Delete_history", new { id = item.id })
+
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+
+ <br />
+<h2 style="color:darkslateblue">patient prescription</h2>
+<br />
+
+
+    <table class="table">
+        
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.k.PatientId)
+
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.k.Medicine)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.k.Duration)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.k.Morning)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.k.Noon)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.k.Evening)
+
+            </th>
+          
+
+        </tr>
+        @foreach (var item in Model.list_prescription)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PatientId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Medicine)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Morning)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Noon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Evening)
+                </td>
+                <td>
+
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+    
