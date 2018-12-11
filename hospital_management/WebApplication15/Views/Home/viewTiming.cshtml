@@ -1,0 +1,71 @@
+﻿@model IEnumerable<WebApplication15.Models.Addtimingviewmodel>
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    View Timing
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Admin </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html">viewtiming</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<h2 style="color:darkslateblue">ViewTiming</h2>
+
+
+
+
+
+<br />
+<br />
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Timing)
+        </th>
+        
+        <th></th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Day)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Timing)
+            </td>
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit_Timing", new { id = item.Doctor_id }) |
+                @Html.ActionLink("Delete", "Addtiming", new { id = item.Doctor_id })
+
+
+
+
+            </td>
+        </tr>
+    }
+
+</table>

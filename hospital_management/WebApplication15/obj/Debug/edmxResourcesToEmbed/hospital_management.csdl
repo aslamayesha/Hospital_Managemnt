@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hospital_managementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Doctor_timing">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_doctor" Type="Int32" />
+    <Property Name="Day" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Timing" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="History_doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="register_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="category" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Register" Relationship="Self.FK_History_doctor_Register" FromRole="History_doctor" ToRole="Register" />
+  </EntityType>
+  <EntityType Name="Patient_Prescription">
+    <Key>
+      <PropertyRef Name="SR" />
+    </Key>
+    <Property Name="SR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Registerid" Type="Int32" Nullable="false" />
+    <Property Name="Medicine" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="Morning" Type="Int32" />
+    <Property Name="Noon" Type="Int32" />
+    <Property Name="Evening" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="question" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="answer" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="History_doctor" Relationship="Self.FK_History_doctor_Register" FromRole="Register" ToRole="History_doctor" />
+    <NavigationProperty Name="Patient_History" Relationship="Self.FK_Patient_History_Register" FromRole="Register" ToRole="Patient_History" />
+  </EntityType>
+  <EntityType Name="Register_doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="category" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="question" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="answer" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register_patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="question" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="answer" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patient_History">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Age" />
+      <PropertyRef Name="Weight" />
+      <PropertyRef Name="BP" />
+      <PropertyRef Name="Pulse" />
+      <PropertyRef Name="indications" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Weight" Type="Int32" Nullable="false" />
+    <Property Name="BP" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pulse" Type="Int32" Nullable="false" />
+    <Property Name="indications" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Register" Relationship="Self.FK_Patient_History_Register" FromRole="Patient_History" ToRole="Register" />
+  </EntityType>
+  <Association Name="FK_History_doctor_Register">
+    <End Role="Register" Type="Self.Register" Multiplicity="1" />
+    <End Role="History_doctor" Type="Self.History_doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Register">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="History_doctor">
+        <PropertyRef Name="register_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Patient_History_Register">
+    <End Role="Register" Type="Self.Register" Multiplicity="1" />
+    <End Role="Patient_History" Type="Self.Patient_History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Register">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Patient_History">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hospital_managementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Doctor_timing" EntityType="Self.Doctor_timing" />
+    <EntitySet Name="History_doctor" EntityType="Self.History_doctor" />
+    <EntitySet Name="Patient_Prescription" EntityType="Self.Patient_Prescription" />
+    <EntitySet Name="Registers" EntityType="Self.Register" />
+    <EntitySet Name="Register_doctor" EntityType="Self.Register_doctor" />
+    <EntitySet Name="Register_patient" EntityType="Self.Register_patient" />
+    <EntitySet Name="Patient_History" EntityType="Self.Patient_History" />
+    <AssociationSet Name="FK_History_doctor_Register" Association="Self.FK_History_doctor_Register">
+      <End Role="Register" EntitySet="Registers" />
+      <End Role="History_doctor" EntitySet="History_doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Patient_History_Register" Association="Self.FK_Patient_History_Register">
+      <End Role="Register" EntitySet="Registers" />
+      <End Role="Patient_History" EntitySet="Patient_History" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

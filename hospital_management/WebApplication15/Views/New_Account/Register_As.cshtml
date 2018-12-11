@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Register_As";
+    Layout = "~/Views/Shared/_Layout_newAccount.cshtml";
+}
+
+@section scripts{
+    <section>
+        
+    </section>
+}
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Register As
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Account </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Register As</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<script>
+    function redirectOnDoctorRegister() {
+    document.location ='Register_doc';
+    }
+</script>
+<div style="width:300px; margin:0 auto;">
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Register as Doctor" class="genric-btn primary circle" onClick='redirectOnDoctorRegister()'/>
+        </div>
+    </div>
+</div>
+<script>
+    function redirectOnPatientRegister() {
+    document.location ='Register';
+}
+</script>
+<div style="width:300px; margin:0 auto;">
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Register as Patient" class="genric-btn primary circle" onClick='redirectOnPatientRegister()' />
+        </div>
+    </div>
+</div>
+        
+

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hospital_managementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Doctor-timing">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_doctor" Type="int" />
+    <Property Name="Day" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Timing" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="History_doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="register_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="category" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'hospital_management.dbo.Patient_History' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Patient_History">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Age" />
+      <PropertyRef Name="Weight" />
+      <PropertyRef Name="BP" />
+      <PropertyRef Name="Pulse" />
+      <PropertyRef Name="indications" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Weight" Type="int" Nullable="false" />
+    <Property Name="BP" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Pulse" Type="int" Nullable="false" />
+    <Property Name="indications" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patient_Prescription">
+    <Key>
+      <PropertyRef Name="SR" />
+    </Key>
+    <Property Name="SR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Registerid" Type="int" Nullable="false" />
+    <Property Name="Medicine" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="Morning" Type="int" />
+    <Property Name="Noon" Type="int" />
+    <Property Name="Evening" Type="int" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="question" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="answer" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register_doctor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="category" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="question" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="answer" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Register_patient">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="question" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="answer" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_History-doctor_Register">
+    <End Role="Register" Type="Self.Register" Multiplicity="1" />
+    <End Role="History_doctor" Type="Self.History_doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Register">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="History_doctor">
+        <PropertyRef Name="register_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Patient_History_Register">
+    <End Role="Register" Type="Self.Register" Multiplicity="1" />
+    <End Role="Patient_History" Type="Self.Patient_History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Register">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Patient_History">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hospital_managementModelStoreContainer">
+    <EntitySet Name="Doctor-timing" EntityType="Self.Doctor-timing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="History_doctor" EntityType="Self.History_doctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patient_Prescription" EntityType="Self.Patient_Prescription" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register" EntityType="Self.Register" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register_doctor" EntityType="Self.Register_doctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register_patient" EntityType="Self.Register_patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patient_History" EntityType="Self.Patient_History" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Patient_History].[id] AS [id], 
+    [Patient_History].[Gender] AS [Gender], 
+    [Patient_History].[Age] AS [Age], 
+    [Patient_History].[Weight] AS [Weight], 
+    [Patient_History].[BP] AS [BP], 
+    [Patient_History].[Pulse] AS [Pulse], 
+    [Patient_History].[indications] AS [indications]
+    FROM [dbo].[Patient_History] AS [Patient_History]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_History-doctor_Register" Association="Self.FK_History-doctor_Register">
+      <End Role="Register" EntitySet="Register" />
+      <End Role="History_doctor" EntitySet="History_doctor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Patient_History_Register" Association="Self.FK_Patient_History_Register">
+      <End Role="Register" EntitySet="Register" />
+      <End Role="Patient_History" EntitySet="Patient_History" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "checkdetails";
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Patient Details
+                </h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+<!-- Start contact-page Area -->
+<section class="contact-page-area section-gap">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 d-flex flex-column address-wrap">
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+            <div class="row">
+                <div class="col-lg-6 form-group">
+                    <input name="patient-id" placeholder="Patient Id" onfocus="this.placeholder = ''" onblur=" this.placeholder='Patient Id' " class="common-input mb-20 form-control" required="" type="text">
+
+
+
+                </div>
+
+
+
+
+                <div class="col-lg-12">
+                    <div class="alert-msg" style="text-align: center;"></div>
+                    <button class="genric-btn primary circle" style="float: right;">
+                        Search
+                    </button>
+                </div>
+                <head>
+                    <style>
+                        table {
+                            font-family: arial, sans-serif;
+                            border-collapse: collapse;
+                            width: 100%;
+                        }
+
+                        td, th {
+                            border: 1px solid #dddddd;
+                            text-align: left;
+                            padding: 8px;
+                        }
+
+                        tr:nth-child(even) {
+                            background-color: #dddddd;
+                        }
+                    </style>
+                </head>
+
+                <table>
+
+                    <div align="center">
+                        <h1 style=" color:darkslateblue"> History</h1>
+                    </div>
+
+
+                    <tr>
+
+                        <th>Weight</th>
+                        <th>Blood Pressure</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                        <th>Pulse</th>
+                        <th>Indication</th>
+                    </tr>
+                    <tr>
+
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                    </tr>
+                </table>
+
+
+
+
+                </br>
+
+
+                <table>
+                    <div align="center">
+                        <h1 style=" color:darkslateblue"> Prescription</h1>
+                    </div>
+
+                    <tr>
+
+                        <th>Medicine</th>
+                        <th>Duration</th>
+                        <th>Morning</th>
+                        <th>Noon</th>
+                        <th>Evening</th>
+                        <th>Indication</th>
+                    </tr>
+                    <tr>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+                        <td>7678</td>
+
+                    </tr>
+                </table>
+                <br />
+
+
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- End contact-page Area -->
+
+

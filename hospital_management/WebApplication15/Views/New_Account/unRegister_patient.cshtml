@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "unRegister_patient";
+   
+}
+
+
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    unRegister
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Admin </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> UnRegister</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<br />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div style="width:300px; margin:0 auto;">
+        <h3>Are you sure you want to UnRegister?</h3>
+        <br />
+        <br />
+        <div div style="width:800px; margin:0 auto;" class="form-actions no-color">
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="UnRegister" class="genric-btn primary circle" />
+                </div>
+            </div>
+
+        </div> |
+        @Html.ActionLink("Approve Status", "Approve_status")
+    </div>
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+

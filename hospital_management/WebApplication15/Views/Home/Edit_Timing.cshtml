@@ -1,0 +1,74 @@
+﻿@model WebApplication15.Models.Addtimingviewmodel
+
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Add Timing
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Admin</a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html">Addtiming</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+
+<br />
+<br />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div style="width:800px; margin:0 auto;">
+
+            <div class="form-group ">
+                @Html.LabelFor(model => model.Day, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Day, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Day, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group ">
+                @Html.LabelFor(model => model.Timing, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Timing, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Timing, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div style="width:300px; margin:0 auto;">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add" class="genric-btn primary circle" />
+                </div>
+            </div>
+        </div>
+    </div>
+        <div>
+            || @Html.ActionLink("View Timing", "viewTiming",new { id=Model.Doctor_id})|
+        </div>
+}
+
+<br />
+<br />
+<br />
+<br />
+
+@{
+    ViewBag.Title = "Edit_Timing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit_Timing</h2>
+

@@ -1,0 +1,74 @@
+﻿@model WebApplication15.Models.list_p_d
+@{
+    ViewBag.Title = "Approve_status";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Accept Request
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Admin </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> AcceptRequest</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+
+
+<br />
+<br />
+<h2 style="color:darkslateblue">Accept Request of Doctors</h2>
+<br />
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.Category)
+        </th>
+        <th></th>
+
+    </tr>
+    @foreach (var item in Model.list_doctor)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.ActionLink("Register", "Register", new { id = item.Doctor_id, type = "Doctor" }) |
+                @Html.ActionLink("Unregister", "unRegister_patient", new { id = item.Doctor_id,type=item.type })
+
+
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

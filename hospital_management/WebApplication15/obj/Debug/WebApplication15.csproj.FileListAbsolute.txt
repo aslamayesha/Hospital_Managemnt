@@ -1,0 +1,164 @@
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\ApplicationInsights.config
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\csc.exe
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\System.Collections.Immutable.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\vbc.exe
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\VBCSCompiler.exe
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\roslyn\VBCSCompiler.exe.config
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\WebApplication15.dll.config
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\WebApplication15.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\WebApplication15.pdb
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Antlr3.Runtime.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\EntityFramework.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\EntityFramework.SqlServer.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.Web.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.WindowsServer.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.ApplicationInsights.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Google.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Web.Infrastructure.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Newtonsoft.Json.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Owin.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Helpers.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Mvc.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Optimization.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Razor.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.Deployment.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.Razor.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\WebGrease.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.Web.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AI.WindowsServer.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.ApplicationInsights.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Helpers.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Mvc.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Optimization.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.Razor.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.Deployment.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\System.Web.WebPages.Razor.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Antlr3.Runtime.pdb
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Newtonsoft.Json.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\EntityFramework.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\EntityFramework.SqlServer.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Google.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\obj\Debug\WebApplication15.csprojResolveAssemblyReference.cache
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\obj\Debug\WebApplication15.dll
+c:\users\finec\documents\visual studio 2015\Projects\WebApplication15\WebApplication15\obj\Debug\WebApplication15.pdb
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\ApplicationInsights.config
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\csc.exe
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\vbc.exe
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\VBCSCompiler.exe
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\WebApplication15.dll.config
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\WebApplication15.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\WebApplication15.pdb
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Antlr3.Runtime.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\EntityFramework.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\EntityFramework.SqlServer.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.Web.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.ApplicationInsights.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Newtonsoft.Json.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Owin.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Helpers.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Mvc.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Optimization.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Razor.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.Razor.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\WebGrease.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.Web.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.ApplicationInsights.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Helpers.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Mvc.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Optimization.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.Razor.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\System.Web.WebPages.Razor.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Antlr3.Runtime.pdb
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Newtonsoft.Json.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\EntityFramework.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\EntityFramework.SqlServer.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.csprojResolveAssemblyReference.cache
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.dll
+C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.pdb
