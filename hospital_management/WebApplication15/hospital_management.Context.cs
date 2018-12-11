@@ -25,12 +25,13 @@ namespace WebApplication15
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Doctor_timing> Doctor_timing { get; set; }
-        public virtual DbSet<History_doctor> History_doctor { get; set; }
+        public virtual DbSet<Patient_History> Patient_History { get; set; }
         public virtual DbSet<Patient_Prescription> Patient_Prescription { get; set; }
         public virtual DbSet<Register> Registers { get; set; }
         public virtual DbSet<Register_doctor> Register_doctor { get; set; }
         public virtual DbSet<Register_patient> Register_patient { get; set; }
-        public virtual DbSet<Patient_History> Patient_History { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<doctor_History> doctor_History { get; set; }
+        public virtual DbSet<doctor_timing> doctor_timing { get; set; }
     }
 }

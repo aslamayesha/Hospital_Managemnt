@@ -15,13 +15,12 @@ namespace WebApplication15
     public partial class Patient_History
     {
         public int id { get; set; }
+        public int patient_id { get; set; }
         public string Gender { get; set; }
         public int Age { get; set; }
         public int Weight { get; set; }
         public string BP { get; set; }
         public int Pulse { get; set; }
         public string indications { get; set; }
-    
-        public virtual Register Register { get; set; }
     }
 }

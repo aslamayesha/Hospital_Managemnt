@@ -162,3 +162,6 @@ C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\bin\Micr
 C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.csprojResolveAssemblyReference.cache
 C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.dll
 C:\Users\FINEC\Desktop\project_u_A\hospital_management\WebApplication15\obj\Debug\WebApplication15.pdb
+C:\Users\PC\Desktop\project\Hospital_Managemnt\hospital_management\WebApplication15\obj\Debug\WebApplication15.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\project\Hospital_Managemnt\hospital_management\WebApplication15\obj\Debug\WebApplication15.dll
+C:\Users\PC\Desktop\project\Hospital_Managemnt\hospital_management\WebApplication15\obj\Debug\WebApplication15.pdb

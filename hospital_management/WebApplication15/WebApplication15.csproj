@@ -203,14 +203,14 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\New_AccountController.cs" />
     <Compile Include="Controllers\PatientController.cs" />
-    <Compile Include="Doctor_timing.cs">
+    <Compile Include="doctor_History.cs">
+      <DependentUpon>hospital_management.tt</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_timing.cs">
       <DependentUpon>hospital_management.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="History_doctor.cs">
-      <DependentUpon>hospital_management.tt</DependentUpon>
     </Compile>
     <Compile Include="hospital_management.Context.cs">
       <AutoGen>True</AutoGen>
@@ -232,8 +232,10 @@
     <Compile Include="Models\Addhistoryviewmodel.cs" />
     <Compile Include="Models\Addprescriptionviewmodel.cs" />
     <Compile Include="Models\Addtimingviewmodel.cs" />
+    <Compile Include="Models\checkdetailsviewmodel.cs" />
     <Compile Include="Models\enumerable.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\list_pat_details.cs" />
     <Compile Include="Models\list_p_d.cs" />
     <Compile Include="Models\loginviewmodel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -257,6 +259,9 @@
     <Compile Include="Scripts\Rgisterviewmodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>hospital_management.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -371,6 +376,12 @@
     <Content Include="Views\Home\viewTiming.cshtml" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Home\Edit_Timing.cshtml" />
+    <Content Include="Views\Doctor\checkdetails.cshtml" />
+    <Content Include="Views\Doctor\checkdetailslist.cshtml" />
+    <Content Include="Views\Doctor\Delete.cshtml" />
+    <Content Include="Views\Doctor\Delete_history.cshtml" />
+    <Content Include="Views\Doctor\Edit.cshtml" />
+    <Content Include="Views\Doctor\Edit_history.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -12,11 +12,12 @@ namespace WebApplication15
     using System;
     using System.Collections.Generic;
     
-    public partial class Doctor_timing
+    public partial class doctor_timing
     {
         public int id { get; set; }
-        public Nullable<int> id_doctor { get; set; }
         public string Day { get; set; }
         public string Timing { get; set; }
+    
+        public virtual Register Register { get; set; }
     }
 }

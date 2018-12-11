@@ -17,8 +17,8 @@ namespace WebApplication15
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Register()
         {
-            this.History_doctor = new HashSet<History_doctor>();
-            this.Patient_History = new HashSet<Patient_History>();
+            this.doctor_History = new HashSet<doctor_History>();
+            this.doctor_timing = new HashSet<doctor_timing>();
         }
     
         public int id { get; set; }
@@ -29,8 +29,8 @@ namespace WebApplication15
         public string answer { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<History_doctor> History_doctor { get; set; }
+        public virtual ICollection<doctor_History> doctor_History { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Patient_History> Patient_History { get; set; }
+        public virtual ICollection<doctor_timing> doctor_timing { get; set; }
     }
 }
